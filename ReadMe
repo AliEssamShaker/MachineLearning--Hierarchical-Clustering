@@ -1,0 +1,19 @@
+Hi, 
+
+This is my HC algorithm implementation to help us decide on which mall customers to target. Again just like with the Kmeans clustering repository I will be using the Mall Customers dataset.
+
+Hierarchical clustering: 
+
+Hierarchical clustering in fact, pretty much produces the same results as Kmeans clustering, however, as I am going to explain from my research and understanding how different of an approach it is.
+
+Agglomerative HC :- An iterative algorithm. First step is to make each data point a single-point cluster, that forms N clusters, and then take the two closest data points and make them one cluster, and that forms N-1 clusters, and then with what we have, again find the two closest data points and make them into one cluster, and that forms N-2 clusters, and this iterative process keeps going until we have just one huge cluster. 
+
+The distance between every data point is measure using Euclidean distance. The way the distance is measured will really impact the algorithm. The distance can be measured by closest, furthest, average distance, and distance between centroids. It is quite subjective in my opinion, and it really depends on the problem.
+
+Dendograms are used to show the process of building this iterative process and forming the final large single cluster. The further the distance between the data points the higher the dissimilarity. After forming the Dendogram, the Dendogram should help us determine the optimal number of clusters for a specific problem. The most common way is to figure out from that Dendogram the longest vertical line that does not cross any extended horizontal line. We would pick that line and draw a threshold(a horizontal line that goes through it) and determine the amount of clusters to be formed (the optimal).
+
+
+
+For this dataset, we can see from the Dendogram that roughly the number of clusters to be entered as a paramater to the AgglomerativeClustering from the sklearn modules is 5 just like with the Kmeans clustering.
+
+The results of both Kmeans clustering and hierarchical clustering is pretty much identical as I expected.
