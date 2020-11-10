@@ -1,10 +1,10 @@
 Hi, 
 
-This is my HC algorithm implementation to help us decide on which mall customers to target. Again just like with the Kmeans clustering repository I will be using the Mall Customers dataset.
+This is my HC model to help us decide on which mall customers to target. Again just like with the Kmeans clustering repository I will be using the Mall Customers dataset.
 
 Hierarchical clustering: 
 
-Hierarchical clustering in fact, pretty much produces the same results as Kmeans clustering, however, as I am going to explain from my research and understanding how different of an approach it is.
+Hierarchical clustering in fact, pretty much produces the same results as Kmeans clustering, however, as I am about to explain from my research and understanding how different of an approach it is.
 
 Agglomerative HC :- An iterative algorithm. First step is to make each data point a single-point cluster, that forms N clusters, and then take the two closest data points and make them one cluster, and that forms N-1 clusters, and then with what we have, again find the two closest data points and make them into one cluster, and that forms N-2 clusters, and this iterative process keeps going until we have just one huge cluster. 
 
